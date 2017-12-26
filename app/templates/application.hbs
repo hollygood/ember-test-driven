@@ -1,5 +1,13 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="container">
+  <div class="collapse navbar navbar-collapse navbar-top-collapse">
+    <div class="navbar-right">
+      {{link-to "Sign up" "signup" class="btn btn-primary navbar-btn" id="signup-link"}}
+    </div>
+  </div>
 
-{{outlet}}
+  <div class="navbar-brand-container">
+    <h1><i class="fa fa-star"></i> Book Me!</h1>
+  </div>
+
+  {{outlet}}
+</div>
